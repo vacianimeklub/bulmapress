@@ -1,0 +1,67 @@
+@charset "utf-8"
+
+.main-navigation
+  display: flex
+  position: relative
+
+.main-navigation ul
+  display: none
+
+.nav-item
+  color: $text-light
+  &.is-muted
+    color: #333
+    opacity: .3
+    &:hover
+      color: #333
+      opacity: .3
+
+  &:hover
+    color: $link-hover
+  // Modifiers
+  &.is-active
+    color: $link-active
+  &.is-tab
+    border-bottom: 1px solid transparent
+    border-top: 1px solid transparent
+    padding-left: 12px
+    padding-right: 12px
+    &:hover
+      border-bottom: 1px solid $link
+      border-top: 1px solid transparent
+    &.is-active
+      border-bottom: 3px solid $link
+      border-top: 3px solid transparent
+      color: $link
+
+// Nav Links
+.nav-links
+  display: flex
+  justify-content: space-between
+
+.nav-links .level:not(:last-child)
+  margin-bottom: 0 !important
+
+// Small menu
+.menu-toggle,
+.main-navigation.toggled ul
+  display: flex
+  flex-direction: column
+  width: 100%
+
+@media screen and (min-width: 767px)
+  .menu-toggle
+    display: none
+  
+  .main-navigation ul
+    display: flex
+    flex-wrap: wrap
+    &.dropdown-menu
+      display: none
+      position: absolute
+      top: $nav-height - 10px
+      right: 0
+
+// Hide second level & up navigation until implemented properly
+.dropdown-menu
+  display: none !important

@@ -1,0 +1,81 @@
+@charset "utf-8"
+
+#comments
+  background: #fafafa 
+  .header
+    margin-bottom: 1em
+  .comment-list
+    margin-top: 0
+    margin-left: 0
+    margin-right: 0
+    list-style: none
+    .children
+      margin-top: 1em !important
+      margin-right: 0
+      margin-left: 46px
+      list-style: none
+
+  .comment-respond
+    margin-top: 40px
+
+  textarea
+    min-height: 100px !important
+
+.comment
+  background: $white
+  padding: 10px
+  border: 1px solid $grey-lighter
+  margin-top: 10px !important
+  border-radius: $radius-large
+
+  .children &
+    border-radius: $radius
+
+  .comment-meta
+    display: flex
+    flex-direction: column
+  .comment-author.vcard
+    display: flex
+    align-items: center
+    margin-right: 1em
+    img
+      width: 32px
+      height: 32px
+      margin-right: 1em
+    .fn
+      margin-right: 0.25em
+
+  .reply,
+  .comment-content,
+  .comment-metadata
+    padding-left: 32px
+    margin-left: 1em
+    margin-bottom: 1em
+
+.comments-link
+  margin-right: 0.5em
+
+@media(max-width: $tablet)
+  .edit-link
+    display: block
+    width: 100%
+    margin-top: 10px
+  .comment-metadata
+    margin-right: 10px
+    flex-direction: column
+
+@media(min-width: $tablet)
+  .comment-author.vcard
+    align-items: center
+    img
+      width: 50px
+      height: 50px
+  .comment-meta
+    flex-direction: row !important
+    justify-content: space-between
+
+  .comment-metadata
+    display: flex
+    & > a
+      margin-right: 0.5em
+      display: block

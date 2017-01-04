@@ -1,0 +1,19 @@
+/*
+Theme Name: Bulmapress
+Theme URI: http://bulmapress.com/
+Author: Scops
+Author URI: http://scops.com
+Description: A modern wordpress starter theme built on top of underscores (by Autommatic) with Bulma.io mobile-first flexbox frontend.
+Version: 0.0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: bulmapress
+Tags: one-column, two-columns, three-columns, four-columns, grid-layout, featured-images, accessibility-ready, featured-images, microformats, sticky-post, threaded-comments, translation-ready, blog, news, photography, portfolio
+
+Bulmapress is based on Underscores http://underscores.me/, (C) 2012-2016 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Main stylesheet: /frontend/bulmapress/css/bulmapress.css
+
+Bulma Sass: /frontend/bulma/sass/
+Bulmapress Sass: /frontend/bulmapress/sass/
