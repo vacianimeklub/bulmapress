@@ -2,7 +2,7 @@
 ###A WordPress flexbox theme
 
 
-Hi. I'm a flexbox theme called Bulmapress.
+Hi. I'm a WordPress flexbox theme called Bulmapress.
 
 - Based on [Underscores](http://underscores.me/)
 - [Bulma](http://bulma.io) integration
@@ -11,6 +11,9 @@ Hi. I'm a flexbox theme called Bulmapress.
 - Stable tag: 0.0.1
 - License: [GNU General Public License v2 or later](http://www.gnu.org/licenses/gpl-2.0.html)
 
+## Demo
+
+[demo.bulmapress.com](demo.bulmapress.com/)
 
 ## Installation
 
