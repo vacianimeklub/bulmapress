@@ -13,7 +13,7 @@ Hi. I'm a WordPress flexbox theme called Bulmapress.
 
 ## Demo
 
-[demo.bulmapress.com](demo.bulmapress.com/)
+[demo.bulmapress.com](http://demo.bulmapress.com/)
 
 ## Installation
 
