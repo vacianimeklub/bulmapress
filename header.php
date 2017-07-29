@@ -22,7 +22,7 @@
 <body <?php body_class(); ?>>
 	<div id="page" class="site">
 		<?php bulmapress_skip_link_screen_reader_text(); ?>
-		<header id="header" class="hero">
+		<header id="header" class="hero is-primary is-medium">
 			<div class="hero-head">
 				<div class="container">
 					<nav id="site-navigation" class="nav main-navigation" role="navigation">
@@ -35,6 +35,19 @@
 					</nav><!-- #site-navigation -->
 				</div><!-- .container -->
 			</div><!-- .hero-head -->
+			
+			<!-- Hero content: will be in the middle -->
+			<div class="hero-body">
+				<div class="container has-text-centered">
+					<p class="title">
+				  		Csatlakozzáááá, dik! :D
+					</p>
+					<p>
+						<a href="/csatlakoznal" class="button is-large is-outlined is-white">Csatlakozz! :)</a>
+					</p>
+				</div>
+			</div>
+
 		</header><!-- .hero -->
 
 		<div id="content" class="site-content">
