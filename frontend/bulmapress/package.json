@@ -1,0 +1,24 @@
+{
+  "name": "bulmapress",
+  "version": "0.1.0",
+  "main": "bulmapress.sass",
+  "devDependencies": {
+    "autoprefixer": "^6.3.3",
+    "captain-git-hook": "~1.0.5",
+    "node-sass": "^3.4.2",
+    "postcss-cli": "^2.5.1"
+  },
+  "scripts": {
+    "build": "npm run build-clean && npm run build-sass && npm run build-autoprefix",
+    "build-autoprefix": "postcss --use autoprefixer --output css/bulmapress.css css/bulmapress.css",
+    "build-clean": "rm -rf css",
+    "build-sass": "node-sass --output-style expanded --source-map true bulmapress.sass css/bulmapress.css",
+    "deploy": "npm run build",
+    "start": "npm run build-sass -- --watch"
+  },
+  "files": [
+    "css",
+    "sass",
+    "bulmapress.sass"
+  ]
+}
