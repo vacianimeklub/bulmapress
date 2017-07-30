@@ -12,30 +12,38 @@ if ( ! function_exists( 'bulmapress_posted_on' ) ) :
  * Prints HTML with meta information for the current post-date/time and author.
  */
 function bulmapress_posted_on() {
-	$time_string = '<time class="entry-date published updated" datetime="%1$s">%2$s</time>';
-	if ( get_the_time( 'U' ) !== get_the_modified_time( 'U' ) ) {
-		$time_string = '<time class="entry-date published" datetime="%1$s">%2$s</time><time class="updated" datetime="%3$s">%4$s</time>';
-	}
+	$posted_dt = DateTime::createFromFormat('Y-m-d\TH:i:sT', get_the_date( 'c' ));
+	$modified_dt = DateTime::createFromFormat('Y-m-d\TH:i:sT', get_the_modified_date( 'c' ));
 
-	$time_string = sprintf( $time_string,
-		esc_attr( get_the_date( 'c' ) ),
-		esc_html( get_the_date() ),
-		esc_attr( get_the_modified_date( 'c' ) ),
-		esc_html( get_the_modified_date() )
-	);
+	$diff = date_diff($posted_dt, $modified_dt, true);
+
+	$time_string = sprintf('<time class="entry-date published" datetime="%1$s">%2$s</time>', esc_attr( get_the_date( 'c' ) ),
+		esc_html( get_the_date() ));
+
+	$modification_time_string = sprintf('<time class="entry-date updated" datetime="%1$s">%2$s</time>', esc_attr( get_the_modified_date( 'c' ) ),
+		esc_html( get_the_modified_date() ));
 
 	$posted_on = sprintf(
 		esc_html_x( 'Posted on %s', 'post date', 'bulmapress' ),
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 	);
 
+	$modified_on = sprintf(
+		esc_html_x( 'Modified on %s', 'modification date', 'bulmapress' ),
+		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $modification_time_string . '</a>'
+	);
+
 	$byline = sprintf(
-		esc_html_x( 'by %s', 'post author', 'bulmapress' ),
+		esc_html_x( 'Posted by %s', 'post author', 'bulmapress' ),
 		'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
 	);
 
-	echo '<span class="posted-on">' . $posted_on . '</span><span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
+	echo '<span class="posted-on">' . $posted_on . '</span><br />';
+	if ($diff->d > 3) {
+		echo '<span class="modified-on">' . $modified_on . '</span><br />';
+	}
 
+	echo '<span class="byline"> ' . $byline . '</span>';
 }
 endif;
 
@@ -55,12 +63,12 @@ function bulmapress_entry_footer() {
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'bulmapress' ) );
 		if ( $tags_list ) {
-			printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'bulmapress' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<br /><span class="tags-links">' . esc_html__( 'Tagged %1$s', 'bulmapress' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
 	}
 
 	if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-		echo '<span class="comments-link">';
+		echo '<br /> <span class="comments-link">';
 		/* translators: %s: post title */
 		comments_popup_link( sprintf( wp_kses( __( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'bulmapress' ), array( 'span' => array( 'class' => array() ) ) ), get_the_title() ) );
 		echo '</span>';
@@ -72,7 +80,7 @@ function bulmapress_entry_footer() {
 			esc_html__( 'Edit %s', 'bulmapress' ),
 			the_title( '<span class="screen-reader-text">"', '"</span>', false )
 		),
-		'<span class="edit-link">',
+		'<br /> <span class="edit-link">',
 		'</span>'
 	);
 }
