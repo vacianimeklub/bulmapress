@@ -1,0 +1,232 @@
+# Copyright (C) 2016 Automattic
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: _s 1.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
+"POT-Creation-Date: 2016-02-14 21:43:07+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-07-30 02:02+0200\n"
+"Language-Team: \n"
+"X-Generator: Poedit 2.0.3\n"
+"Last-Translator: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"Language: hu_HU\n"
+
+# @ _s
+#: 404.php:17
+msgid "Oops! That page can&rsquo;t be found."
+msgstr "A keresett oldal nem található."
+
+# @ _s
+#: 404.php:21
+msgid ""
+"It looks like nothing was found at this location. Maybe try one of the links "
+"below or a search?"
+msgstr ""
+"Semmit sem találtunk itt. Próbáld meg a lenti linkeket vagy a keresést."
+
+# @ _s
+#: 404.php:33
+msgid "Most Used Categories"
+msgstr "Leggyakoribb kategóriák"
+
+# @ _s
+#. translators: %1$s: smiley
+#: 404.php:51
+#, php-format
+msgid "Try looking in the monthly archives. %1$s"
+msgstr "Nézzük meg a havi bejegyzések között is. %1$s"
+
+# @ _s
+#: comments.php:31
+#, php-format
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "Hozzászólás: &ldquo;%2$s&rdquo;"
+msgstr[1] "Hozzászólások (%1$s): &ldquo;%2$s&rdquo;"
+
+# @ _s
+#: comments.php:40 comments.php:61
+msgid "Comment navigation"
+msgstr "Hozzászólás navigáció"
+
+# @ _s
+#: comments.php:43 comments.php:64
+msgid "Older Comments"
+msgstr "Régebbi hozzászólások"
+
+# @ _s
+#: comments.php:44 comments.php:65
+msgid "Newer Comments"
+msgstr "Újabb hozzászólások"
+
+# @ _s
+#: comments.php:78
+msgid "Comments are closed."
+msgstr "Hozzászólások zárolva."
+
+# @ _s
+#: footer.php:18
+msgid "https://wordpress.org/"
+msgstr "https://wordpress.org/"
+
+# @ _s
+#: footer.php:18
+#, php-format
+msgid "Proudly powered by %s"
+msgstr "Motor: %s"
+
+# @ _s
+#: footer.php:20
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr "Téma: %1$s (készítette a %2$s)"
+
+# @ _s
+#: functions.php:47
+msgid "Primary"
+msgstr "Elsődleges"
+
+# @ _s
+#: functions.php:102
+msgid "Sidebar"
+msgstr "Oldalsáv"
+
+# @ _s
+#: header.php:25
+msgid "Skip to content"
+msgstr "Ugrás a tartalomhoz"
+
+# @ _s
+#: header.php:45
+msgid "Primary Menu"
+msgstr "Elsődleges menü"
+
+# @ _s
+#: template-tags.php:28
+#, php-format
+msgctxt "post date"
+msgid "Posted on %s"
+msgstr "Beküldve: %s"
+
+# @ _s
+#: template-tags.php:33
+#, php-format
+msgctxt "post author"
+msgid "by %s"
+msgstr "| Írta: %s"
+
+# @ _s
+#. translators: used between list items, there is a space after the comma
+#: template-tags.php:50 template-tags.php:56
+msgid ", "
+msgstr ", "
+
+# @ _s
+#: inc/template-tags.php:52
+#, php-format
+msgid "Posted in %1$s"
+msgstr "Kategória: %1$s"
+
+# @ _s
+#: inc/template-tags.php:58
+#, php-format
+msgid "Tagged %1$s"
+msgstr "Címkék: %1$s"
+
+# @ _s
+#: inc/template-tags.php:65
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr "Írj egy kommentet: <span class=\"screen-reader-text\"> %s</span>"
+
+# @ _s
+#: inc/template-tags.php:65
+msgid "1 Comment"
+msgstr "Egy hozzászólás"
+
+# @ _s
+#: inc/template-tags.php:65
+msgid "% Comments"
+msgstr "% hozzászólás"
+
+# @ _s
+#. translators: %s: Name of current post
+#: inc/template-tags.php:71 template-parts/content-page.php:33
+#, php-format
+msgid "Edit %s"
+msgstr "%s szerkesztése"
+
+# @ _s
+#: search.php:19
+#, php-format
+msgid "Search Results for: %s"
+msgstr "Keresési találatok: %s"
+
+# @ _s
+#: template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr "Semmit sem találtunk"
+
+# @ _s
+#: template-parts/content-none.php:21
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+"Kész vagy első bejegyzésed publikálására? <a href=\"%1$s\">Kezdj hozzá itt</"
+"a>."
+
+# @ _s
+#: template-parts/content-none.php:25
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+"Bocs, de semmit sem találtunk a keresésedre. Próbáld újra más kifejezésekkel."
+
+# @ _s
+#: template-parts/content-none.php:31
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr "Nem találjuk, amit kerestél. Talán a kereséssel megtalálhatod."
+
+# @ _s
+#: template-parts/content-page.php:22 template-parts/content.php:38
+msgid "Pages:"
+msgstr "Oldalak:"
+
+# @ _s
+#. translators: %s: Name of current post.
+#: template-parts/content.php:33
+#, php-format
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "Folytatom az olvasást: %s <span class=\"meta-nav\">&rarr;</span>"
+
+#. Theme Name of the plugin/theme
+msgid "Bulmapress"
+msgstr "Bulmapress"
+
+# @ _s
+#. Theme URI of the plugin/theme
+msgid "http://bulmapress.com/"
+msgstr "http://bulmapress.com/"
+
+# @ _s
+#. Description of the plugin/theme
+msgid "Hi. I'm a flexbox theme called Bulmapress."
+msgstr "Szia! Én a Bulmapress nevű flexbox téma vagyok."
+
+# @ _s
+#. Author of the plugin/theme
+msgid "Scops UG (haftungsbeschränkt)"
+msgstr "Scops UG (haftungsbeschränkt)"
+
+# @ _s
+#. Author URI of the plugin/theme
+msgid "http://scops.com/"
+msgstr "http://scops.com/"
