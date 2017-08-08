@@ -65,6 +65,26 @@ msgstr ""
 msgid "Comments are closed."
 msgstr ""
 
+#: comments.php:94
+msgid "Got Something To Say?"
+msgstr ""
+
+#: comments.php:95
+msgid "Your comment"
+msgstr ""
+
+#: comments.php:97
+msgid "Your Name"
+msgstr ""
+
+#: comments.php:98
+msgid "Your Email"
+msgstr ""
+
+#: comments.php:101
+msgid "Post"
+msgstr ""
+
 #: footer.php:18
 #@ _s
 msgid "https://wordpress.org/"

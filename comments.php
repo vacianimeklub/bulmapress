@@ -91,14 +91,14 @@ endif;
 		endif;
 		?>
 		<?php $comment_args = array( 
-			'title_reply'=>'<h3 class="title is-3">Got Something To Say?</h3>',
-			'comment_field' => '<div class="columns is-multiline"><div class="column '. (is_user_logged_in() ? 'is-full' : 'is-half') .'"><label class="label" for="comment">' . __( 'Your comment' ) . '</label>' . '<p class="control">' . '<textarea class="textarea" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>' . '</p></div>',
+			'title_reply'=>'<h3 class="title is-3">' . __('Got Something To Say?', 'bulmapress') . '</h3>',
+			'comment_field' => '<div class="columns is-multiline"><div class="column '. (is_user_logged_in() ? 'is-full' : 'is-half') .'"><label class="label" for="comment">' . __( 'Your comment', 'bulmapress' ) . '</label>' . '<p class="control">' . '<textarea class="textarea" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>' . '</p></div>',
 			'fields' => apply_filters( 'comment_form_default_fields', array(
-				'author' => '<div class="column is-half"><label class="label" for="author">' . __( 'Your Name' ) . ( $req ? '<span>*</span>' : '' ) .'</label> ' . '<p class="control">' . '<input class="input" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>',   
-				'email'  => '<label class="label" for="email">' . __( 'Your Email' ) . ( $req ? '<span>*</span>' : '' ) . '</label> ' . '<p class="control">' . '<input class="input" id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' />'.'</p>',
+				'author' => '<div class="column is-half"><label class="label" for="author">' . __( 'Your Name', 'bulmapress' ) . ( $req ? '<span>*</span>' : '' ) .'</label> ' . '<p class="control">' . '<input class="input" id="author" name="author" type="text" value="' . esc_attr( $commenter['comment_author'] ) . '" size="30"' . $aria_req . ' /></p>',
+				'email'  => '<label class="label" for="email">' . __( 'Your Email', 'bulmapress' ) . ( $req ? '<span>*</span>' : '' ) . '</label> ' . '<p class="control">' . '<input class="input" id="email" name="email" type="text" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' />'.'</p>',
 				'url'    => '</div>' ) ),
 			'comment_notes_after' => '',
-			'submit_button' => '<div class="column is-full"><div class="control"><input name="submit" type="submit" id="submit" class="button is-primary is-outlined post-comment-button" value="Post" /></div></div></div>'
+			'submit_button' => '<div class="column is-full"><div class="control"><input name="submit" type="submit" id="submit" class="button is-primary is-outlined post-comment-button" value="' . __('Post', 'bulmapress') . '" /></div></div></div>'
 			);
 			comment_form($comment_args); ?>
 		</div><!-- .container -->
