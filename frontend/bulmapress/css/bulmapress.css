@@ -6510,6 +6510,10 @@ figure.aligncenter {
 }
 
 header#header {
+  background-color: #000;
+}
+
+body.home header#header {
   background: url("../../img/header.jpg") no-repeat;
   background-size: cover;
   background-size-background-position: center center;
