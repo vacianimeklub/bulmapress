@@ -35,7 +35,8 @@
 					</nav><!-- #site-navigation -->
 				</div><!-- .container -->
 			</div><!-- .hero-head -->
-			
+
+			<?php if (is_front_page()): ?>
 			<!-- Hero content: will be in the middle -->
 			<div class="hero-body">
 				<div class="container has-text-centered">
@@ -47,6 +48,7 @@
 					</p>
 				</div>
 			</div>
+		<?php endif; ?>
 
 		</header><!-- .hero -->
 

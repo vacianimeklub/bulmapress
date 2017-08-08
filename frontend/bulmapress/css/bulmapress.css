@@ -6510,8 +6510,9 @@ figure.aligncenter {
 }
 
 header#header {
-  background-image: url("http://phenomena.nationalgeographic.com/files/2015/06/BGYE66.jpg");
-  background-size: contain;
+  background: url("../../img/header.jpg") no-repeat;
+  background-size: cover;
+  background-size-background-position: center center;
 }
 
 /*# sourceMappingURL=bulmapress.css.map */
