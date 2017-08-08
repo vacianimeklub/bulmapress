@@ -1,0 +1,8 @@
+{
+  "name": "vak-bulmapress",
+  "version": "0.1.0",
+  "devDependencies": {
+    "grunt": "^1.0.1",
+    "grunt-wp-i18n": "^1.0.0"
+  }
+}
