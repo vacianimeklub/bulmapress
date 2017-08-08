@@ -5,15 +5,15 @@ msgstr ""
 "Project-Id-Version: _s 1.0.0\n"
 "Report-Msgid-Bugs-To: https://wordpress.org/tags/_s\n"
 "POT-Creation-Date: 2016-02-14 21:43:07+00:00\n"
+"PO-Revision-Date: 2017-08-08 21:29+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: hu_HU\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"PO-Revision-Date: 2017-07-30 02:02+0200\n"
-"Language-Team: \n"
 "X-Generator: Poedit 2.0.3\n"
-"Last-Translator: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"Language: hu_HU\n"
 
 # @ _s
 #: 404.php:17
@@ -22,11 +22,8 @@ msgstr "A keresett oldal nem található."
 
 # @ _s
 #: 404.php:21
-msgid ""
-"It looks like nothing was found at this location. Maybe try one of the links "
-"below or a search?"
-msgstr ""
-"Semmit sem találtunk itt. Próbáld meg a lenti linkeket vagy a keresést."
+msgid "It looks like nothing was found at this location. Maybe try the search?"
+msgstr "Semmit sem találtunk itt. Próbáld meg a keresést."
 
 # @ _s
 #: 404.php:33
@@ -107,18 +104,18 @@ msgid "Primary Menu"
 msgstr "Elsődleges menü"
 
 # @ _s
-#: template-tags.php:28
+#: template-tags.php:27
 #, php-format
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr "Beküldve: %s"
 
 # @ _s
-#: template-tags.php:33
+#: template-tags.php:37
 #, php-format
 msgctxt "post author"
-msgid "by %s"
-msgstr "| Írta: %s"
+msgid "Posted by %s"
+msgstr "Beküldte: %s"
 
 # @ _s
 #. translators: used between list items, there is a space after the comma
@@ -140,8 +137,8 @@ msgstr "Címkék: %1$s"
 
 # @ _s
 #: inc/template-tags.php:65
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr "Írj egy kommentet: <span class=\"screen-reader-text\"> %s</span>"
+msgid "Leave a Comment on %s"
+msgstr "Írj egy kommentet: %s"
 
 # @ _s
 #: inc/template-tags.php:65
@@ -230,3 +227,14 @@ msgstr "Scops UG (haftungsbeschränkt)"
 #. Author URI of the plugin/theme
 msgid "http://scops.com/"
 msgstr "http://scops.com/"
+
+# @ _s
+#: functions/template-tags.php:32
+msgctxt "modification date"
+msgid "Modified on %s"
+msgstr "Utoljára módosítva: %s"
+
+# @ _s
+#~ msgctxt "post author"
+#~ msgid "by %s"
+#~ msgstr "| Írta: %s"

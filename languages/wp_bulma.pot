@@ -18,8 +18,7 @@ msgid "Oops! That page can&rsquo;t be found."
 msgstr ""
 
 #: 404.php:21
-#@ _s
-msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgid "It looks like nothing was found at this location. Maybe try the search?"
 msgstr ""
 
 #: 404.php:33
@@ -103,18 +102,18 @@ msgstr ""
 msgid "Primary Menu"
 msgstr ""
 
-#: template-tags.php:28
+#: template-tags.php:27
 #, php-format
 #@ _s
 msgctxt "post date"
 msgid "Posted on %s"
 msgstr ""
 
-#: template-tags.php:33
+#: template-tags.php:37
 #, php-format
 #@ _s
 msgctxt "post author"
-msgid "by %s"
+msgid "Posted by %s"
 msgstr ""
 
 #. translators: used between list items, there is a space after the comma
@@ -138,7 +137,7 @@ msgstr ""
 
 #: inc/template-tags.php:65
 #@ _s
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgid "Leave a Comment on %s"
 msgstr ""
 
 #: inc/template-tags.php:65
@@ -192,7 +191,7 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
-#. translators: %s: Name of current post. 
+#. translators: %s: Name of current post.
 #: template-parts/content.php:33
 #, php-format
 #@ _s
@@ -221,4 +220,9 @@ msgstr ""
 #. Author URI of the plugin/theme
 #@ _s
 msgid "http://scops.com/"
+msgstr ""
+
+#: functions/template-tags.php:32
+msgctxt "modification date"
+msgid "Modified on %s"
 msgstr ""

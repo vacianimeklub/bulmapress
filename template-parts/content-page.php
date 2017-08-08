@@ -31,7 +31,7 @@
 						sprintf(
 							/* translators: %s: Name of current post */
 							esc_html__( 'Edit %s', 'bulmapress' ),
-							the_title( '<span class="screen-reader-text">"', '"</span>', false )
+							get_the_title()
 							),
 						'<span class="edit-link">',
 						'</span>'
