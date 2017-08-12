@@ -25,14 +25,24 @@
 		<header id="header" class="hero is-primary is-medium">
 			<div class="hero-head">
 				<div class="container">
-					<nav id="site-navigation" class="nav main-navigation" role="navigation">
-						<div class="nav-left">
-							<?php bulmapress_home_link('nav-item is-brand'); ?>
-							<?php bulmapress_blog_description('nav-item is-muted'); ?>
-						</div>
-						<?php bulmapress_menu_toggle(); ?>
-						<?php bulmapress_navigation(); ?>
-					</nav><!-- #site-navigation -->
+                    <nav class="navbar is-transparent">
+                        <div class="navbar-brand">
+                            <a class="navbar-item" href="/">
+                                <img class="vak-logo" src="<?php echo get_template_directory_uri() . "/"?>frontend/img/vaci-anime-klub-logo-uj-aranyok-500-opt.png" alt="Váci Anime Klub"/>
+                            </a>
+
+                            <div class="navbar-burger" data-target="navMenu">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </div>
+                        </div>
+                        <div class="navbar-menu" id="navMenu">
+                            <div class="navbar-start">
+                                <?php bulmapress_navigation(); ?>
+                            </div>
+                        </div>
+                    </nav>
 				</div><!-- .container -->
 			</div><!-- .hero-head -->
 

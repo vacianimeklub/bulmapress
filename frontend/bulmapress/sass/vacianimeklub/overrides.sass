@@ -1,17 +1,22 @@
-#site-navigation .nav-left a
-  font-size: 2em
-  display: block
-  width: 450px
-  height: 150px
-  background: url("../../img/vaci-anime-klub-logo-450.png") no-repeat
-  text-indent: 100%
-  white-space: nowrap
-  overflow: hidden
-
-header#header
-  background-color: #000
+@import "../../node_modules/bulma/sass/utilities/variables"
 
 body.home header#header
-	background: url("../../img/header.jpg") no-repeat
-	background-size: cover
-  background-position: center center
+  background-size: cover
+  background: url("../../img/header2.jpg") no-repeat center center
+
+.navbar-brand .vak-logo
+  position: relative
+  top: -1px
+
+.navbar a
+  font-size: $size-6
+
+.navbar.is-transparent
+  .navbar-menu
+    box-shadow: none
+
+  a.navbar-item:hover
+    background-color: rgba(0,0,0,0.2) !important
+
+.navbar-burger span
+  background-color: $white

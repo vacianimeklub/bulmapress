@@ -15,11 +15,10 @@ function bulmapress_navigation()
 {
 	wp_nav_menu( array(
 		'theme_location'    => 'menu-1',
-		'depth'             => 2,
+		'depth'             => 1,
 		'container'         => 'div id="navigation"',
-		'menu_class'        => 'nav-right nav-menu',
-		'fallback_cb'       => 'bulmapress_navwalker::fallback',
-		'walker'            => new bulmapress_navwalker()
+        'items_wrap'        => '%3$s',
+		'walker'            => new bulmapress_navwalker(),
 		)
 	);
 }
