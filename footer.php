@@ -16,7 +16,7 @@
 	<div class="container">
 		<div class="hero-body has-text-centered">
 			<div class="site-info">
-				<?php bulmapress_copyright_link(); ?>
+				<?php bulmapress_copyright_link('Váci Anime Klub', '/'); ?>
 			</div><!-- .site-info -->
 		</div>
 	</div><!-- .container -->
