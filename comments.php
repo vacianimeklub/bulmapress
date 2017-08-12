@@ -23,7 +23,7 @@ endif;
 ?>
 
 <div id="comments" class="comments-area section">
-	<div class="container is-narrow">
+	<div class="container">
 		<?php
 		// You can start editing here -- including this comment!
 		if ( have_comments() ) : ?>
@@ -32,12 +32,12 @@ endif;
 				<h2 class="title is-3"><?php esc_html_e('Comments', 'bulmapress'); ?></h2>
 				<p class="subtitle">
 			<?php printf( // WPCS: XSS OK.
-				esc_html( _nx( 
-					'One thought on &ldquo;%2$s&rdquo;', 
-					'%1$s thoughts on &ldquo;%2$s&rdquo;', 
-					get_comments_number(), 
-					'comments title', 
-					'bulmapress' 
+				esc_html( _nx(
+					'One thought on &ldquo;%2$s&rdquo;',
+					'%1$s thoughts on &ldquo;%2$s&rdquo;',
+					get_comments_number(),
+					'comments title',
+					'bulmapress'
 					) ),
 				number_format_i18n( get_comments_number() ),
 				'<span>' . get_the_title() . '</span>'
@@ -90,7 +90,7 @@ endif;
 		<?php
 		endif;
 		?>
-		<?php $comment_args = array( 
+		<?php $comment_args = array(
 			'title_reply'=>'<h3 class="title is-3">' . __('Got Something To Say?', 'bulmapress') . '</h3>',
 			'comment_field' => '<div class="columns is-multiline"><div class="column '. (is_user_logged_in() ? 'is-full' : 'is-half') .'"><label class="label" for="comment">' . __( 'Your comment', 'bulmapress' ) . '</label>' . '<p class="control">' . '<textarea class="textarea" id="comment" name="comment" cols="45" rows="8" aria-required="true"></textarea>' . '</p></div>',
 			'fields' => apply_filters( 'comment_form_default_fields', array(

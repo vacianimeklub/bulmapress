@@ -8,9 +8,9 @@
  */
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class('card'); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class('box'); ?>>
 	<?php if ( has_post_thumbnail() ): ?>
-		<div class="card-image">
+		<div class="post-image">
 			<figure class="image is-16by9">
 				<?php if ( is_single() ) : ?>
 					<?php the_post_thumbnail(); ?>
@@ -20,7 +20,7 @@
 			</figure>
 		</div>
 	<?php endif; ?>
-	<div class="card-content">
+	<div class="post-content">
 		<div class="media">
 			<header class="media-content">
 				<?php if ( is_single() ) : ?>
@@ -52,10 +52,9 @@
 		<?php else : ?>
 			<?php the_excerpt(); ?>
 		<?php endif; ?>
-		<div class="content entry-footer">
-			<small><?php bulmapress_entry_footer(); ?></small>
-		</div><!-- .entry-footer -->
-	</div><!-- .entry-content -->
-</div>
-
+            <div class="content entry-footer">
+                <small><?php bulmapress_entry_footer(); ?></small>
+            </div><!-- .entry-footer -->
+        </div><!-- .entry-content -->
+    </div>
 </article><!-- #post-## -->

@@ -12,9 +12,9 @@ get_header(); ?>
 <div id="primary" class="content-area">
 	<main id="main" class="site-main wrapper" role="main">
 		<?php while ( have_posts() ) : the_post(); ?>
-			<?php get_template_part( 'template-parts/content', 'post' ); ?>
-			<div class="section">
-				<div class="container is-narrow">
+            <div class="container">
+			    <?php get_template_part( 'template-parts/content', 'post' ); ?>
+    			<div class="section">
 					<?php the_post_navigation();?>
 				</div>
 			</div>
