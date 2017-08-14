@@ -1,3 +1,4 @@
+@import "../config"
 @import "../../node_modules/bulma/sass/utilities/variables"
 
 body.home header#header
@@ -20,3 +21,20 @@ body.home header#header
 
 .navbar-burger span
   background-color: $white
+
+.tile
+	&.is-events
+		background-color: $vak-red
+		color: $white
+
+	&.is-vakstars
+		background-color: $vak-orange  
+		color: $white
+
+	&.is-blog
+		background-color: $vak-blue
+		color: $white
+
+	&.is-gallery
+		background-color: $vak-green
+		color: $white
