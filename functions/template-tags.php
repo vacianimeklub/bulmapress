@@ -55,15 +55,15 @@ function bulmapress_entry_footer() {
 	// Hide category and tag text for pages.
 	if ( 'post' === get_post_type() ) {
 		/* translators: used between list items, there is a space after the comma */
-		$categories_list = get_the_category_list( esc_html__( ', ', 'bulmapress' ) );
+		$categories_list = get_the_category_list( '<span class="tag is-light">', '</span><span class="tag is-light">', '</span>' );
 		if ( $categories_list && bulmapress_categorized_blog() ) {
-			printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'bulmapress' ) . '</span>', $categories_list ); // WPCS: XSS OK.
+			printf( '<span class="tags cat-links">' . esc_html__( 'Posted in %1$s', 'bulmapress' ) . '</span>', $categories_list ); // WPCS: XSS OK.
 		}
 
 		/* translators: used between list items, there is a space after the comma */
-		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'bulmapress' ) );
+		$tags_list = get_the_tag_list( '<span class="tag is-light">', '</span><span class="tag is-light">', '</span>' );
 		if ( $tags_list ) {
-			printf( '<br /><span class="tags-links">' . esc_html__( 'Tagged %1$s', 'bulmapress' ) . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf( '<br /><span class="tags tags-links">' . esc_html__( 'Tagged %1$s', 'bulmapress' ) . '</span>', $tags_list ); // WPCS: XSS OK.
 		}
 	}
 

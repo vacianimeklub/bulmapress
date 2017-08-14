@@ -9065,7 +9065,7 @@ figure.aligncenter {
 
 body.home header#header {
   background-size: cover;
-  background: url("../../img/header2.jpg") no-repeat center center;
+  background: url("../../img/header3.jpg") no-repeat center center;
 }
 
 @media screen and (max-width: 1007px) {
@@ -9121,6 +9121,11 @@ body.home header#header {
 .tile.is-gallery {
   background-color: #1A975B;
   color: white;
+}
+
+.posted-on {
+  font-size: 1rem;
+  margin-bottom: 1rem;
 }
 
 /*# sourceMappingURL=bulmapress.css.map */

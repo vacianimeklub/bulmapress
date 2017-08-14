@@ -17,7 +17,7 @@
         <?php endif; ?>
 
         <?php if ( 'post' === get_post_type() ) : ?>
-            <div class="subtitle is-6">
+            <div class="posted-on is-6">
                 <?php bulmapress_posted_on(); ?>
             </div><!-- .entry-meta -->
         <?php endif; ?>
