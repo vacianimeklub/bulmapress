@@ -5609,7 +5609,7 @@ a.nav-item:not(.button).is-tab.is-active {
 }
 
 .navbar {
-  background-color: white;
+  background-color: transparent;
   min-height: 3.5rem;
   position: relative;
 }
@@ -5700,7 +5700,7 @@ a.nav-item:not(.button).is-tab.is-active {
 
 .navbar-item,
 .navbar-link {
-  color: #4a4a4a;
+  color: #FFFFFF;
   display: block;
   line-height: 1.5;
   padding: 0.5rem 1rem;
@@ -5839,7 +5839,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
     transform: translateY(0);
   }
   .navbar-link::after {
-    border: 1px solid #22538E;
+    border: 1px solid #FFFFFF;
     border-right: 0;
     border-top: 0;
     content: " ";
@@ -5866,7 +5866,7 @@ a.navbar-item:hover, a.navbar-item.is-active,
     margin-left: auto;
   }
   .navbar-dropdown {
-    background-color: white;
+    background-color: transparent;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
     border-top: 1px solid #dbdbdb;
@@ -9068,21 +9068,59 @@ body.home header#header {
   background: url("../../img/header2.jpg") no-repeat center center;
 }
 
-.navbar-brand .vak-logo {
-  position: relative;
-  top: -1px;
+@media screen and (max-width: 1007px) {
+  body.home header#header {
+    background-position-y: top;
+  }
 }
 
-.navbar a {
+.navbar-brand .vak-logo {
+  position: relative;
+  top: -2px;
+}
+
+.hero.is-primary .navbar a {
   font-size: 1rem;
 }
 
-.navbar.is-transparent .navbar-menu {
+.hero.is-primary .navbar-burger span {
+  background-color: #FFFFFF;
+}
+
+.hero.is-primary .navbar-dropdown {
   box-shadow: none;
 }
 
-.navbar-burger span {
-  background-color: white;
+@media screen and (min-width: 1008px) {
+  .navbar-dropdown {
+    border: 1px solid rgba(255, 255, 255, 0.75);
+  }
+}
+
+@media screen and (max-width: 1007px) {
+  .navbar-menu {
+    box-shadow: none;
+  }
+}
+
+.tile.is-events {
+  background-color: #D95426;
+  color: white;
+}
+
+.tile.is-vakstars {
+  background-color: #D99325;
+  color: white;
+}
+
+.tile.is-blog {
+  background-color: #22538E;
+  color: white;
+}
+
+.tile.is-gallery {
+  background-color: #1A975B;
+  color: white;
 }
 
 /*# sourceMappingURL=bulmapress.css.map */

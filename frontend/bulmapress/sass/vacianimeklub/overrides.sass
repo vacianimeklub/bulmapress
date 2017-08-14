@@ -5,9 +5,13 @@ body.home header#header
   background-size: cover
   background: url("../../img/header2.jpg") no-repeat center center
 
++touch
+  body.home header#header
+    background-position-y: top
+
 .navbar-brand .vak-logo
   position: relative
-  top: -1px
+  top: -2px
 
 .hero.is-primary
   .navbar
@@ -16,6 +20,17 @@ body.home header#header
 
   .navbar-burger span
     background-color: $vak-white
+
+  .navbar-dropdown
+    box-shadow: none
+
++desktop
+  .navbar-dropdown
+    border: 1px solid rgba(255, 255, 255, 0.75)
+
++touch
+  .navbar-menu
+    box-shadow: none
 
 .tile
 	&.is-events
