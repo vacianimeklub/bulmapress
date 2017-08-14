@@ -23,7 +23,6 @@
         <?php endif; ?>
     </header><!-- .entry-header -->
     <div class="content entry-content">
-    <?php if ( is_single() ) : ?>
         <?php the_content( sprintf(
             /* translators: %s: Name of current post. */
             wp_kses( __( 'Continue reading %s <span class="meta-nav">&rarr;</span>', 'bulmapress' ), array( 'span' => array( 'class' => array() ) ) ),
@@ -35,9 +34,6 @@
             'after'  => '</div>',
             ) );
             ?>
-    <?php else : ?>
-        <?php the_excerpt(); ?>
-    <?php endif; ?>
         <div class="content entry-footer">
             <small><?php bulmapress_entry_footer(); ?></small>
         </div><!-- .entry-footer -->

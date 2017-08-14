@@ -21,14 +21,14 @@
 					</div>
 				</div>
 			</header><!-- .page-header -->
-			<div class="archives wrapper">
+			<div class="archives wrapper container">
 				<?php while ( have_posts() ) : the_post(); ?>
 					<?php get_template_part( 'template-parts/content', 'post' ); ?>
 				<?php endwhile; ?>
 			</div>
 			
 			<div class="section pagination">
-				<div class="container is-narrow">
+				<div class="container">
 					<?php the_posts_navigation(); ?>
 				</div>
 			</div>
