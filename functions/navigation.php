@@ -15,7 +15,7 @@ function bulmapress_navigation()
 {
 	wp_nav_menu( array(
 		'theme_location'    => 'menu-1',
-		'depth'             => 1,
+		'depth'             => 3,
 		'container'         => 'div id="navigation"',
         'items_wrap'        => '%3$s',
 		'walker'            => new bulmapress_navwalker(),
